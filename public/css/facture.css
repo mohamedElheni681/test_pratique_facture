@@ -42,7 +42,7 @@
 .category span {
     font-family: fantasy;
     text-align: center;
-    color: chocolate;
+    color: #669ad2;
 }
 .menu div, .contact div {
     position: fixed;
@@ -100,5 +100,9 @@
         left: auto;
         padding-left: 49px;
     }
+}
+.category span:hover {
+    color: chocolate;
+    cursor: pointer;
 }
 
