@@ -5,6 +5,8 @@
     <h1>Editer Facture</h1>
 @stop
 
+<span class="msg-invoice">{{ __('backoffice.edit_invoice') }}</span>
+
 <form action="/factures/{{$facture->id}}" method="POST">
     @csrf
     @method('PUT')
@@ -21,15 +23,15 @@
     @endif
 
     <div class="mb-3">
-        <label for="" class="form-label">{{ __('backoffice.designation') }}</label>
+        <label for="" class="label form-label required">{{ __('backoffice.designation') }}</label>
         <input id="designation" name="designation" type="text" class="form-control {{ $errors->has('designation') ? 'error' : 'border-grey-light' }}" value="{{$facture->designation}}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">{{ __('backoffice.description') }}</label>
+        <label for="" class="label form-label">{{ __('backoffice.description') }}</label>
         <input id="description" name="description" type="text" class="form-control" value="{{$facture->description}}">
     </div>
     <div class="mb-3">
-        <label for="" class="form-label">{{ __('backoffice.price_ht') }}</label>
+        <label for="" class="label form-label required">{{ __('backoffice.price_ht') }}</label>
         <input id="price_ht" name="price_ht" type="number" step="any" class="form-control {{ $errors->has('price_ht') ? 'error' : 'border-grey-light' }}" value="{{$facture->price_ht}}">
     </div>
     <a href="/factures" class="btn btn-secondary" tabindex="5">{{ __('backoffice.cancel') }}</a>

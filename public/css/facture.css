@@ -1,0 +1,104 @@
+.error {
+    border: 1px solid #e3342f;
+}
+.border-grey-light {
+    border-color: rgba(39, 34, 36, 0.96);
+}
+.logout {
+    background: rgba(200,200,200,1);
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+.form-logout {
+    float: right;
+    padding-top: 1%;
+    margin-right: 5%;
+}
+.navbar-position {
+    position: fixed;
+    top: 55px;
+    width: 100%;
+    z-index: 5;
+}
+.logo-img {
+    height: 44px;
+}
+.open-time {
+    margin-right: 5%;
+    text-align: center;
+}
+.category {
+    border-bottom: 1px solid grey;
+    margin: 110px 10px 0 0;
+    position: fixed;top: 0px;
+    padding: 10px 0px;
+    width: 100%;
+    z-index: 1;
+    height: 45px;
+    background-color: aliceblue;
+}
+.category span {
+    font-family: fantasy;
+    text-align: center;
+    color: chocolate;
+}
+.menu div, .contact div {
+    position: fixed;
+    top: 212px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact div {
+    right: 8%;
+}
+.menu div {
+    left: 8%;
+}
+.content {
+    margin-top: 207px
+}
+.contact,.menu {
+    background-color: #a1a1a17d;
+    border-top: 200px solid white;
+}
+.link {
+    color:#000000;
+    text-decoration: none;
+}
+.facture {
+    height: 100%;
+}
+.msg-invoice {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+.required:after {
+    content:" *";
+    color: red;
+}
+.label{
+    font-family: ui-monospace;
+}
+.menu div span, .contact div span:first-child {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .contact div {
+        right: auto;
+        padding-left: 28px;
+    }
+    .menu div {
+        left: auto;
+        padding-left: 49px;
+    }
+}
+

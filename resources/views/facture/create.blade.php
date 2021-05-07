@@ -6,6 +6,8 @@
 
 @section('content')
 
+    <span class="msg-invoice">{{ __('backoffice.add_invoice') }}</span>
+
     <form action="/factures" method="POST">
         @csrf
         @if ($errors->any())
@@ -20,15 +22,15 @@
             </div>
         @endif
         <div class="mb-3">
-            <label for="" class="form-label">{{ __('backoffice.designation') }}</label>
+            <label for="" class="label form-label required">{{ __('backoffice.designation') }}</label>
             <input id="designation" name="designation" type="text" class="form-control {{ $errors->has('designation') ? 'error' : 'border-grey-light' }}"  tabindex="1">
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">{{ __('backoffice.description') }}</label>
+            <label for="" class="label form-label">{{ __('backoffice.description') }}</label>
             <input id="description" name="description" type="text" class="form-control border-grey-light" tabindex="2">
         </div>
         <div class="mb-3">
-            <label for="" class="form-label">{{ __('backoffice.price_ht') }}</label>
+            <label for="" class="label form-label required">{{ __('backoffice.price_ht') }}</label>
             <input id="price_ht" name="price_ht" type="number" step="any" value="0.00" class="form-control  {{ $errors->has('price_ht') ? 'error' : 'border-grey-light' }}" tabindex="3">
         </div>
         <a href="/factures" class="btn btn-secondary" tabindex="5">{{ __('backoffice.cancel') }}</a>

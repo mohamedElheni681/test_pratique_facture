@@ -22,11 +22,14 @@ return [
     'blog'                  => 'Blog',
     'partners'              => 'Partners',
     'sign_out'              => 'Sign Out',
+    'invoices_list'         => 'List of invoices',
     'open_time'             => 'Monday to Friday 9 a.m. to 6 p.m',
     'edit'                  => 'Edit',
     'remove'                => 'Remove',
     'create_new_invoice'    => 'Create a new invoice',
     'cancel'                => 'Cancel',
     'save'                  => 'Save',
-    'add'                   => 'Ajouter'
+    'add'                   => 'Ajouter',
+    'add_invoice'           => 'Add an Invoice',
+    'edit_invoice'          => 'Edit the invoice'
 ];

@@ -22,11 +22,14 @@ return [
     'blog'                  => 'Blog',
     'partners'              => 'Partenaires',
     'sign_out'              => 'Se déconnecter',
+    'invoices_list'         => 'Liste des Factures',
     'open_time'             => 'De lundi à vendredi de 9h à 18h',
     'edit'                  => 'Editer',
     'remove'                => 'Supprimer',
     'create_new_invoice'    => 'Créer une nouvelle facture',
     'cancel'                => 'Annuler',
     'save'                  => 'Enregistrer',
-    'add'                   => 'Ajouter'
+    'add'                   => 'Ajouter',
+    'add_invoice'           => 'Ajouter une facture',
+    'edit_invoice'          => 'Editer la facture'
 ];

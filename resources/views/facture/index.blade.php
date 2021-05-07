@@ -1,9 +1,10 @@
 @extends('facture.layout')
 
 @section('content')
+    <span class="msg-invoice">{{ __('backoffice.invoices_list') }}</span>
     <a href="factures/create" class="btn btn-primary mb-3">{{ __('backoffice.create_new_invoice') }}</a>
 
-    <table id="factures" class="table table-striped table-bordered shadow-lg mt-4" style="width:100%">
+    <table id="factures" class="table table-striped table-bordered shadow-lg mt-4">
         <thead class="bg-primary text-white">
         <tr>
             <th scope="col">N°</th>
