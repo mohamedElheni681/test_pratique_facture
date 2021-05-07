@@ -1,6 +1,5 @@
 @extends('facture.layout')
 
-@section('content')
 @section('content_header')
     <h1>Crear Facture</h1>
 @endsection
